@@ -52,7 +52,7 @@ openssl req -new -key server.key -out server.csr -config openssl.cnf
 openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt -extensions req_ext -extfile openssl.cnf
 
 
-### 4. 執行網站
+### 6. 執行網站
 1. python faceshapeDetermine.py
 2. 輸入三次openssl設置的密碼
 3. 在瀏覽器中開啟 https://IP位置:5443
